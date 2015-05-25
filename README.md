@@ -29,7 +29,7 @@ require 'rclusters'
 
 opts = {}
 
-rcluster = RClusters::PixelDistance.new(opts)
+rcluster = RClusters::ScreenDistance.new(opts)
 
 data = [{:lat=>-23.607581, :lon=>-46.630046,...},
         {:lat=>-23.511634, :lon=>-46.71541,...},...]
@@ -86,9 +86,9 @@ Either in instantiation or in the `calculate` method.
 | Option        | Info       | Values |      
 ---------|-------|------
 | `points`| Points to be clustered |Array of points [hashes]|
-| `max_distance`  | Maximum distance between points in order to cluster them | Integer. Unit `px` using de `PixelDistance` class or the one matching `default_units` option if using `SurfaceDistance`  |
+| `max_distance`  | Maximum distance between points in order to cluster them | Integer. Unit `px` using de `ScreenDistance` class or the one matching `default_units` option if using `SurfaceDistance`  |
 
-#### PixelDistance
+#### ScreenDistance
 
 | Option        | Info       | Values |      
 ---------|-------|------
