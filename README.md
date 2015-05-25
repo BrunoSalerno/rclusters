@@ -3,7 +3,7 @@
 RClusters is a Ruby gem that creates clusters from a points hash using either pixel or surface distance calculations.
 The input is a hash and the output is another hash. Right now, **a max_distance value has to be provided**.
 
-Inspired by [this post](http://www.appelsiini.net/2008/introduction-to-marker-clustering-with-google-maps).
+Based on [this post](http://www.appelsiini.net/2008/introduction-to-marker-clustering-with-google-maps).
 
 ## Installation
 
@@ -91,8 +91,6 @@ Either in instantiation or in the `calculate` method.
 | Option        | Info       | Values |      
 ---------|-------|------
 | `zoom`  | Distance is processed by a Google Maps type zoom scale | Integer . Default: `12` | 
-| `offset` | Used for translation to projected coordinates | Default: `268435456`|
-| `radius` | Earth radius | Default: `85445659.4471`|
 
 #### SurfaceDistance
 
