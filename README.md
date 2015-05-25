@@ -31,7 +31,8 @@ opts = {}
 
 rcluster = RClusters::PixelDistance.new(opts)
 
-data = [{:lat=>-23.607581, :lon=>-46.630046,...},{:lat=>-23.511634, :lon=>-46.71541,...},...]
+data = [{:lat=>-23.607581, :lon=>-46.630046,...},
+        {:lat=>-23.511634, :lon=>-46.71541,...},...]
 
 clusters = rcluster.calculate(data,2000) # 2000px as max_distance
 ```
@@ -44,7 +45,8 @@ opts = {}
 
 rcluster = RClusters::SurfaceDistance.new(opts)
 
-data = [{:lat=>-23.607581, :lon=>-46.630046,...},{:lat=>-23.511634, :lon=>-46.71541,...},...]
+data = [{:lat=>-23.607581, :lon=>-46.630046,...},
+        {:lat=>-23.511634, :lon=>-46.71541,...},...]
 
 clusters = rcluster.calculate(data,200) # 200 mts as max_distance
 ```
